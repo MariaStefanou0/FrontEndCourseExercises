@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Search</title>
+    <style>
+        #content{
+            margin:0 auto;
+            width: 600px; 
+            background: black;
+            color: white;
+            border-radius: 1em;
+            padding: 10em;
+        }
+        h2{
+            font-size: 40px;
+            font-family: monospace;
+        }
+        #search-bing{
+            font-size: 22px;
+        }
+        input {
+            padding: 10px;
+            color:indigo;
+        }
+
+        button{
+            float:right;
+            padding:20px;
+            background-color: hotpink;
+            color:indigo;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+    <h2>Search Engine Form</h2>
+    <form action="https://www.bing.com/search?">
+        <label id="search-bing" for="search"> search in bing for: </label>
+           <input id="search" name="q" value="ferrari">
+    <br>
+        <button>Search</button>
+    </form>
+</div>
+</body>
+</html>
