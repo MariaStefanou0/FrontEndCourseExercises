@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Google Search</title>
+    <title>Google</title>
 </head>
+
 <body>
     <header>
         <div id="top-nav">
             <ul>
-                <li><a href="https://mail.google.com/">Gmail </a></li>
-                <li><a href="">Images</a></li>
-                <li id="box-icon"><a href=""><img src="images/box.svg" alt="box apps icon"></a></li>
-                <li id="user-icon"><a href=""><img src="images/user.svg" alt="user icon"></a></li>
+                <li><a class="one" href="https://mail.google.com/">Gmail </a></li>
+                <li><a class="two" href="#">Images</a></li>
+                <li><a class="three" href="#"><img id="box-icon" src="images/box.svg" alt="box apps icon"></a></li>
+                <!-- <li id="user-icon"><a href=""><img src="images/user.svg" alt="user icon"></a></li> -->
+                <li>
+                    <button id="sign-in" a href="#">Sign in</a></button>
+                </li>
             </ul>
         </div>
     </header>
@@ -22,33 +27,37 @@
         <img src="images/googlelogo.png" alt="google logo">
     </div>
 
-<div id="search-bar">
+
     <form action="https://www.google.com/search?">
-        <label id="google-search-text" for= "search-text"></label>
-        <input name="q" id="search-text" type="text" value="">
-<br>
-            <input class="submit" type="submit" value="Google Search">
-            <input class="submit" type="submit" value="I'm Feeling Lucky">
+        <div id="search-bar">
+            <div id="search-text"><label id="google-search-text" for="search-text"></label>
+                <input name="q" id="" type="text" value="" autocomplete="off">
+            </div>
+            <div class="icon" id="search-icon"><img id="" src="images/search.svg"></div>
+            <div class="icon" id="mic-icon"><img id="" src="images/mic.svg"></div>
+        </div>
+        <br>
+        <input class="submit" type="submit" value="Google Search">
+        <input class="submit" type="submit" value="I'm Feeling Lucky">
     </form>
 
-
-</div>
 
     <footer>
         <div id="bottom-nav">
             <ul id="left">
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>About</li>
-                <li>How Search works</li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How Search works</a></li>
             </ul>
 
             <ul id="right">
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>

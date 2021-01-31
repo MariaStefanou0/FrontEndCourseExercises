@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #top-nav {
     text-align: right;    
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;    
     font-size: 14px;
 }
 
@@ -16,11 +16,26 @@ ul {
 
 li {
     display: inline;
-    padding: 8px;
-    
+    padding: 10px;    
   }
-  a{
+
+  a {
     text-decoration: none;
+    color:rgb(56, 56, 56);
+  }
+
+  #box-icon{
+      width: 25px;
+      vertical-align: middle;
+      cursor: pointer;
+  }
+
+   #sign-in {
+      padding:8px;
+      background-color: rgb(100, 162, 255);
+      color:white;
+      border-radius: 4px;
+      border: transparent;
   }
 
   #google-pic {
@@ -33,20 +48,51 @@ form{
     width:100%;
     text-align: center;
     margin-top: -120px;
+    /* position: relative; */
+}
+
+#search-bar{
+    position:relative;
+    /* display: flex; */
+    /* width: 100%; */
+    /* margin-bottom:30px; */
+}
+#search-text{
+    /* position:relative; */
 }
 
 input[type=text] {
     width: 500px;
-    padding:10px;
+    padding:15px 15px 15px 50px;
     font-size: 15px;
-    border: 1px solid grey;
+    border: 1px solid rgb(190, 190, 190);
     border-radius: 2rem;
     outline-style: none;
-    
+    box-sizing: border-box; 
 }
 
 input[type=text]:hover {
-    
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border: 1px solid lightgrey;
+}
+
+#search-icon{
+    position:absolute;
+    /* bottom:0; */
+    left:-460px;
+    right:0;
+    top:335px;
+    top:15px;
+}
+
+#mic-icon{
+    position:absolute;
+    /* bottom:0; */
+    left:460px;
+    right:0px;
+    top:335px;
+    top:15px;
+    cursor: pointer;
 }
 
 .submit{
@@ -54,11 +100,14 @@ input[type=text]:hover {
     padding:10px;
     border: 0ch;
     border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
 
 }
 
 .submit:hover{
-    border: 1px solid grey;      
+    border: 1px solid rgb(199, 199, 199); 
+    box-shadow: 0 0 5px rgba(104, 104, 104, 0.2);     
 
 }
   #bottom-nav {
@@ -66,8 +115,8 @@ input[type=text]:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightgrey;
-    border: 1px solid grey;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(190, 190, 190);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding:20px;
@@ -75,10 +124,60 @@ input[type=text]:hover {
 
   #left {
       float:left;
+  
 
   }
 
   #right{
       float:right;
-      margin-right: 40px;
+      padding-right: 50px;
+  
   }
+
+  @media screen and (max-width: 600px) {
+    .view {
+        width: 100%;
+    }
+
+    input[type=text]{
+        width:400px;
+    }
+
+    #search-icon{
+        left:-360px;
+    }
+    
+    #mic-icon{
+        left:360px;
+    }
+
+    #left{
+        float: none;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #right{
+        float: none;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 400px) { 
+
+    input[type=text]{
+        width:300px;
+    }
+
+    #search-icon{
+        left:-260px;
+    }
+    
+    #mic-icon{
+        left:260px;
+    }
+
+    #left{
+        margin-right:40px;
+    }
+} 
