@@ -39,26 +39,24 @@ li {
   }
 
   #google-pic {
-      width: 100%;
-      margin: 150px auto;
-      text-align: center;
+    max-width:272px;
+    max-height:92px;
+    margin: 150px auto;
   }
 
-form{
-    width:100%;
+  #form-content{
     text-align: center;
+    margin:0 auto;
+    width:500px;
     margin-top: -120px;
-    /* position: relative; */
 }
 
 #search-bar{
     position:relative;
+    height:50px;
     /* display: flex; */
     /* width: 100%; */
     /* margin-bottom:30px; */
-}
-#search-text{
-    /* position:relative; */
 }
 
 input[type=text] {
@@ -79,20 +77,22 @@ input[type=text]:hover {
 #search-icon{
     position:absolute;
     /* bottom:0; */
-    left:-460px;
+    left:10px;
     right:0;
-    top:335px;
     top:15px;
+    width: 20px;
+    height:25px;
 }
 
 #mic-icon{
     position:absolute;
     /* bottom:0; */
-    left:460px;
-    right:0px;
+    right:20px;
     top:335px;
     top:15px;
     cursor: pointer;
+    width: 20px;
+    height:25px;
 }
 
 .submit{
@@ -119,65 +119,77 @@ input[type=text]:hover {
     border: 1px solid rgb(190, 190, 190);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    padding:20px;
+    padding:10px;
   }
 
-  #left {
-      float:left;
-  
-
+  br {
+    display: none !important;
   }
 
-  #right{
+#left li{
+    display: inline;
+    float:left;
+}
+
+#right{
+    padding-right: 50px;
+}
+  #right li{
       float:right;
-      padding-right: 50px;
-  
+      display: inline;
   }
 
   @media screen and (max-width: 600px) {
-    .view {
-        width: 100%;
+    #form-content{
+        width:400px;
     }
 
     input[type=text]{
         width:400px;
     }
 
-    #search-icon{
-        left:-360px;
-    }
-    
-    #mic-icon{
-        left:360px;
-    }
-
-    #left{
+    #left li{
         float: none;
-        margin-bottom: 15px;
+    }
+    #left{
+        margin-bottom: 10px;
         text-align: center;
+
+    }
+    #right li{
+        float: none;   
     }
     #right{
-        float: none;
-        text-align: center;
-        
+        text-align: center; 
+        padding-right: 0;
     }
 }
-
+@media screen and (max-width: 500px) { 
+    #form-content{
+        width:350px;
+    }
+    input[type=text]{
+        width:350px;
+    }
+}
 @media screen and (max-width: 400px) { 
 
+    #top-nav{
+        text-align: center;
+    }
+    #form-content{
+        width:300px;
+        text-align: unset;
+    }
     input[type=text]{
         width:300px;
     }
-
-    #search-icon{
-        left:-260px;
-    }
-    
-    #mic-icon{
-        left:260px;
-    }
-
-    #left{
-        margin-right:40px;
-    }
+    br {
+        display: block !important;
+        content: "";
+        margin-top: 7px;
+      }
+      #left{
+        margin-bottom: 7px;
+      }
 } 
