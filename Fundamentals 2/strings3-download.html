@@ -29,7 +29,9 @@
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
-
+    let fixedQuote = quote.slice(0, 1) + " " + quote.slice(2).toLowerCase();
+    fixedQuote = fixedQuote.replace("green eggs and ham", " lentil ");
+    finalQuote = fixedQuote + " . ";
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
