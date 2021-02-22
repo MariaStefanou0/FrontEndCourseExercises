@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducing some Basic JavaScript Data Types.">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Types</title>
+</head>
+<body>
+    <h1>Data types</h1>
+    <table>
+        <tr>
+            <th>Type </th>
+            <th>What are they?</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>String </td>
+            <td>Variable with a series of characters</td>
+            <td><pre><code>  let lastName = "Johnson";  </code></pre></td>
+        </tr>
+        <tr>
+            <td>Number </td>
+            <td>Variable made with numbers </td>
+            <td><pre><code>  let age = 30;  </code></pre></td>
+        </tr>
+        <tr>
+            <td>Boolean </td>
+            <td> True || False </td>
+            <td><pre><code>  age = lastName; // False </code></pre></td>
+        </tr><tr>
+            <td>Symbol </td>
+            <td>A “symbol” represents a unique identifier.
+ A value of this type can be created using Symbol(). Symbols are guaranteed to be unique.</td>
+            <td><pre><code>  let id = Symbol(); 
+  let id = Symbol("id"); 
+  let id1 = Symbol("id");
+  let id2 = Symbol("id");
+                
+  alert(id1 == id2); // false</code></pre></td>
+        </tr><tr>
+            <td>BigInt </td>
+            <td>is a built-in object that provides a way to represent whole numbers larger than 253 - 1 </td>
+            <td><pre><code>  let previouslyMaxSafeInteger = 9007199254740991n
+
+  let alsoHuge = BigInt(9007199254740991)
+  // ↪ 9007199254740991n  </code></pre></td>
+        </tr><tr>
+            <td>Undefined </td>
+            <td>Variable without a value </td>
+            <td><pre><code>  let birth;
+
+  birth = undefined;  </code></pre></td>
+        </tr><tr>
+            <td>Null </td>
+            <td>Null is "nothing" </td>
+            <td><pre><code>  let person = {home :"Athens", eyes : "brown"};
+  
+  person = null;  </code></pre></td>
+        </tr><tr>
+            <th>This types ABOVE are considered as Primitives.</th>
+            <th>They are immutable, they cannot be altered</th>
+            <th><pre><code>  let name = 'Flavio'
+  let secondName = name
+  name = 'Roger'
+  secondName //'Flavio'</code></pre></th>
+        </tr>
+    </table>
+    <h2>You can learn more about Data Types <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"> HERE </a> and also <a href="https://flaviocopes.com/difference-primitive-types-objects/">HERE</a></h2>
+</body>
+</html>
