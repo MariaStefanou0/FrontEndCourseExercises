@@ -1,0 +1,28 @@
+1.  return a + b;
+
+2.  function numberChecker() {
+	if(number >= 10 ) {
+		return true;
+	} else {
+		return false;
+	}
+    }
+
+3.  const a = (1 + 8);
+    const b = (22 * 3);
+    const c = (5 % 4);
+    const d = (a - 17);
+    const e = a + b + c + d
+
+4.  const birthYear = 1948;
+    const thisYear = 1965;
+    const firstName = "Carlos";
+    const lastName = "Stevenson";
+    const fullName = firstName + " " + lastName;
+    const age = thisYear - birthYear;
+
+    const greeting = "Hello! My name is " + fullName + " and I am " + age + " years old.";
+
+    console.log(greeting);
+
+    -Afterwards we had to comment out Step 2 and uncomment Step 3-

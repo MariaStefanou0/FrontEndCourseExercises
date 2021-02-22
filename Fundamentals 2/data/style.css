@@ -1,0 +1,41 @@
+body{
+    background-image: url(images/js4.jpg);
+    background-size:cover;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+    text-align: center;
+}
+table {
+    margin: 50px auto;
+    background-color: rgb(183, 248, 248, 0.8);
+    max-width: 800px;
+}
+th, td {
+    border: 1px solid black;
+  }
+
+td {
+    padding:10px;
+}
+th{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+h2{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: center;
+}
+a{
+    color:aqua;
+    text-decoration:none;
+}
+a:hover{
+    color:yellow;
+}
